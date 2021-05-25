@@ -8,16 +8,17 @@
     <title>Zizi Karma - Psychologist</title>
     <link rel="shortcut icon" type="png" href="/../icons/lotus.png" />
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
     <header class="header">
       <div class="navbar">
         <div class="container flex">
-          <a href="index.html" class="h1"><h1>Zizi Karma</h1></a>
+          <a href="#home" class="h1"><h1>Zizi Karma</h1></a>
           <div class="toggle "></div>
           <nav>
             <ul>
-              <li><a href="index-en.html" class="menu-icon"><img src="../icons/home.svg" alt=""></a></li>
+              <li><a href="#home" class="menu-icon"><img src="../icons/home.svg" alt=""></a></li>
+              <li><a href="#contact" class="menu-icon"><img src="../icons/envelope.svg" alt=""></a></li>
               <li><a href="blog-en.html" class="menu-icon"><img src="../icons/copywriting.svg" alt=""></a></li>
               <li><a href="index.html" class="menu-icon"><img src="../icons/russia.svg" alt=""></a></li>
             </ul>
@@ -28,9 +29,10 @@
 
     <nav class="menu">
       <ul>
-        <li><a href="index-en.html" class="menu-text">Home</a></li>
-        <li><a href="blog-en.html" class="menu-text">Blog</a></li>
-        <li><a href="index.html" class="menu-text">Русский</a></li>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="blog-en.html">Blog</a></li>
+        <li><a href="index-en.html#contact" class="menu-text">Contact</a></li>
+        <li><a href="index.html">Русский</a></li>
 
       </ul>
     </nav>
@@ -122,10 +124,10 @@
           </div>
 
           <!-- Contact -->
-          <div class="contact">
+          <div class="contact" id="contact">
             <h2>Contact</h2>
             <div class="card">
-              <form>
+              <form method="POST" data-netlify="true">
                 <div class="form-control">
                   <input type="text" name="name" placeholder="Name" required />
                 </div>
@@ -177,6 +179,14 @@
         menuToggle.classList.toggle('active')
         showcase.classList.toggle('active')
         header.classList.toggle('active')
+        menuText.classList.toggle('active')
+      })
+
+      menuText.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+        header.classList.toggle('active')
+        menuText.classList.toggle('active')
       })
     </script>
   </body>

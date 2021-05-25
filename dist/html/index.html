@@ -9,16 +9,17 @@
     <title>Zizi Karma - Psychologist</title>
     <link rel="shortcut icon" type="png" href="../icons/lotus.png" />
   </head>
-  <body>
+  <body id="home">
     <!-- Navbar -->
     <header class="header">
       <div class="navbar">
         <div class="container flex">
-          <a href="index.html" class="h1"><h1>Zizi Karma</h1></a>
+          <a href="#home" class="h1"><h1>Zizi Karma</h1></a>
           <div class="toggle "></div>
           <nav>
             <ul>
-              <li><a href="index.html" class="menu-icon"><img src="../icons/home.svg" alt=""></a></li>
+              <li><a href="#home" class="menu-icon"><img src="../icons/home.svg" alt=""></a></li>
+              <li><a href="#contact" class="menu-icon"><img src="../icons/envelope.svg" alt=""></a></li>
               <li><a href="blog.html" class="menu-icon"><img src="../icons/copywriting.svg" alt=""></a></li>
               <li><a href="index-en.html" class="menu-icon"><img src="../icons/canada.svg" alt=""></a></li>
             </ul>
@@ -29,9 +30,10 @@
 
     <nav class="menu">
       <ul>
-        <li><a href="index.html" class="menu-text">Главная</a></li>
-        <li><a href="blog.html" class="menu-text">Блог</a></li>
-        <li><a href="index-en.html" class="menu-text">English</a></li>
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="blog.html" >Блог</a></li>
+        <li><a href="index.html#contact" class="menu-text">контакт</a></li>
+        <li><a href="index-en.html" >English</a></li>
 
       </ul>
     </nav>
@@ -200,12 +202,12 @@
           </div>
 
           <!-- Contact -->
-          <div class="contact">
+          <div class="contact" id="contact">
             <h2>контакт</h2>
             <div class="card">
-              <form>
+              <form method="POST" data-netlify="true">
                 <div class="form-control">
-                  <input type="text" name="name" placeholder="Name" required />
+                  <input type="text" name="name" placeholder="Имя" required />
                 </div>
                 <div class="form-control">
                   <input type="email" name="email" placeholder="Email" required />
@@ -213,8 +215,8 @@
                 <div class="form-control message">
                   <textarea
                     name="message"
-                    class="subject"
-                    placeholder="Write a Message"
+                    class="subject" 
+                    placeholder="написать сообщение"
                   ></textarea>
                 </div>
                 <input type="submit" value="Send" class="btn" />
@@ -263,7 +265,15 @@
         menuToggle.classList.toggle('active')
         showcase.classList.toggle('active')
         header.classList.toggle('active')
+        menuText.classList.toggle('active')
       })
+      menuText.addEventListener('click', () => {
+        menuToggle.classList.toggle('active')
+        showcase.classList.toggle('active')
+        header.classList.toggle('active')
+        menuText.classList.toggle('active')
+      })
+     
     </script>
   </body>
 </html>

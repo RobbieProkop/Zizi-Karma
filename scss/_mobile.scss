@@ -91,7 +91,7 @@
         position: relative;
         width: 60px;
         height: 60px;
-        background: url("/icons/menu.svg") no-repeat center;
+        background: url("../icons/menu.svg") no-repeat center;
         background-size: 30px;
         cursor: pointer;
         margin-top: 5px;
@@ -99,7 +99,7 @@
       .toggle.active{
         width: 60px;
         height: 60px;
-        background: url("/icons/cancel.svg") no-repeat center;
+        background: url("../icons/cancel.svg") no-repeat center;
         background-size: 25px;
         cursor: pointer;
       }

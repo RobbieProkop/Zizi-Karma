@@ -26,6 +26,7 @@
           <nav>
             <ul>
               <li><a href="index-en.html" class="menu-icon"><img src="../icons/home.svg" alt=""></a></li>
+              <li><a href="index-en.html#contact" class="menu-icon"><img src="../icons/envelope.svg" alt=""></a></li>
               <li><a href="blog-en.html" class="menu-icon"><img src="../icons/copywriting.svg" alt=""></a></li>
               <li><a href="story-3.html" class="menu-icon"><img src="../icons/russia.svg" alt=""></a></li>
             </ul>
@@ -36,9 +37,10 @@
 
     <nav class="menu">
       <ul>
-        <li><a href="index-en.html" class="menu-text">Home</a></li>
-        <li><a href="blog-en.html" class="menu-text">Blog</a></li>
-        <li><a href="story-3.html" class="menu-text">Русский</a></li>
+        <li><a href="index-en.html">Home</a></li>
+        <li><a href="blog-en.html">Blog</a></li>
+        <li><a href="index-en.html#contact" class="menu-text">Contact</a></li>
+        <li><a href="index.html">Русский</a></li>
 
       </ul>
     </nav>
@@ -227,6 +229,14 @@
       menuToggle.classList.toggle('active')
       showcase.classList.toggle('active')
       header.classList.toggle('active')
+      menuText.classList.toggle('active')
+    })
+
+    menuText.addEventListener('click', () => {
+      menuToggle.classList.toggle('active')
+      showcase.classList.toggle('active')
+      header.classList.toggle('active')
+      menuText.classList.toggle('active')
     })
   </script>
   </body>
