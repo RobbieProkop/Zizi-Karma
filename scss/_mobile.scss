@@ -192,7 +192,7 @@
   .footer {
     .container{
       padding: 0 15px;
-      height: 90px;
+      max-height: 90px;
       .footer-items{
         display: flex;
         flex-direction: column;
@@ -264,14 +264,15 @@
     } 
   } 
   .footer {
-    height: 140px;
+    max-height: 140px;
     .container{
       padding: 0 5px;
-      height: 140px;
+      max-height: 140px;
       .footer-items{
         display: flex;
         flex-direction: column;
         padding-top: 0;
+        max-height: 140px;
         .flex-row {
           display: flex;
           flex-direction: column;
