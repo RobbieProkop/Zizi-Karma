@@ -455,11 +455,16 @@ img {
   position: absolute;
   width: 100%;
 
+  .container {
+    max-height: 90px;
+  }
+
   .footer-items {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-top: 1rem;
+    max-height: 90px;
   }
   .flex-row{
     display: flex;

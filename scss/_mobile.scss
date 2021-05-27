@@ -50,7 +50,20 @@
          }
 
          .contact {
-           margin-bottom: 2rem;
+           padding-bottom: 2rem;
+         }
+       }
+     }
+   }
+   .footer {
+     .container {
+       .footer-items{
+         max-height: 90px;
+         .email {
+           max-height: 90px;
+           a {
+             align-items: center;
+           }
          }
        }
      }
@@ -75,6 +88,11 @@
       }
     }
     
+  }
+  .footer {
+    .container {
+      max-height: 90px;
+    }
   }
 }
 
@@ -243,8 +261,9 @@
       .contact {
         .card {
           padding: 10px;
+          max-width: 310px;
           form{
-            width: 300px;
+            max-width: 290px;
             padding: 10px;
           }
         }
@@ -264,7 +283,8 @@
     } 
   } 
   .footer {
-    height: 140px;
+    min-height: 140px;
+    max-height: 140px;
     .container{
       padding: 0 5px;
       max-height: 140px;
