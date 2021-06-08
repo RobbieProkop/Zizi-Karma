@@ -1,45 +1,43 @@
-@media (max-width:800px) {
+@media (max-width: 800px) {
+  .showcase {
+    &-home {
+      .showcase-text {
+        padding: 0;
+        .grid {
+          justify-content: center;
+          align-items: center;
+          text-align: left;
+          .grid-text {
+            text-align: left;
+            padding-left: 2rem;
+          }
+        }
+        .steps {
+          .flex-items {
+            display: flex;
+            flex-direction: column;
 
-   .showcase {
-     &-home {
+            .icon-1 {
+              padding: 0;
+              margin: 0;
+            }
+            .icon-2 {
+              padding-left: 0;
+            }
+            .icon-3 {
+              padding-right: 0;
+            }
+            .text-3 {
+              margin-left: 0;
+            }
+            p {
+              text-align: left;
+            }
+          }
+        }
 
-       .showcase-text{
-         padding: 0;
-         .grid{
-           justify-content: center;
-           align-items: center;
-           text-align: left;
-           .grid-text {
-             text-align: left;
-             padding-left: 2rem;
-           }
-         }
-         .steps {
-           .flex-items {
-             display: flex;
-             flex-direction: column;
-
-             .icon-1 {
-               padding: 0;
-               margin: 0;
-             }
-             .icon-2 {
-               padding-left: 0;
-             }
-             .icon-3 {
-               padding-right: 0;;
-             }
-             .text-3{
-               margin-left: 0;
-             }
-             p {
-               text-align: left;
-             }
-           }
-         }
-
-         .cost {
-           margin-bottom: 2rem;
+        .cost {
+          margin-bottom: 2rem;
           .grid-icons {
             display: flex;
             flex-direction: column;
@@ -47,30 +45,31 @@
               padding-bottom: 20px;
             }
           }
-         }
+        }
 
-         .contact {
-           padding-bottom: 2rem;
-         }
-       }
-     }
-   }
-   .footer {
-     .container {
-       .footer-items{
-         max-height: 90px;
-         .email {
-           max-height: 90px;
-           a {
-             align-items: center;
-           }
-         }
-       }
-     }
-   }
+        .contact {
+          padding-bottom: 2rem;
+        }
+      }
+    }
+  }
+  .footer {
+    .container {
+      padding: 0 20px;
+      .footer-items {
+        max-height: 90px;
+        .email {
+          max-height: 90px;
+          a {
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
 }
-@media(max-width: 650px) {
-  .showcase-home{
+@media (max-width: 650px) {
+  .showcase-home {
     .showcase-text {
       .grid {
         display: inline-block;
@@ -87,24 +86,25 @@
         }
       }
     }
-    
   }
   .footer {
     .container {
       max-height: 90px;
+      .footer-text {
+        padding-top: 0.5rem;
+      }
     }
   }
 }
 
-@media (max-width: 550px){
+@media (max-width: 550px) {
   .header {
     .navbar {
-
       nav {
         display: none;
       }
-  
-      .toggle{
+
+      .toggle {
         display: flex;
         position: relative;
         width: 60px;
@@ -114,7 +114,7 @@
         cursor: pointer;
         margin-top: 5px;
       }
-      .toggle.active{
+      .toggle.active {
         width: 60px;
         height: 60px;
         background: url("../icons/cancel.svg") no-repeat center;
@@ -129,14 +129,14 @@
   .showcase-home {
     width: 100%;
   }
-  .showcase{
+  .showcase {
     &-home.active,
     &-blog.active {
-      right:100vw;
+      right: 100vw;
     }
-    
+
     &-blog {
-      .grid{
+      .grid {
         display: flex;
         flex-direction: column;
         gap: 0;
@@ -154,7 +154,6 @@
               }
             }
           }
-
         }
         .aside {
           margin-top: 0;
@@ -179,7 +178,6 @@
     }
   }
 
-
   .menu {
     position: fixed;
     top: 0;
@@ -189,29 +187,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(to right, #edd9ef 40%,  #b3c0e2);
+    background: linear-gradient(to right, #edd9ef 40%, #b3c0e2);
     ul {
       position: relative;
       list-style: none;
-      li{
+      li {
         cursor: pointer;
         padding: 10px 0;
-        a{
+        a {
           font-size: 2rem;
           &:hover {
             border-bottom: none;
           }
-          
         }
       }
     }
   }
 
   .footer {
-    .container{
+    .container {
       padding: 0 15px;
       max-height: 90px;
-      .footer-items{
+      .footer-items {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -223,18 +220,16 @@
       }
     }
   }
-  
 }
 @media (max-width: 450px) {
   .container {
     padding: 0 15px 15px;
   }
-  
+
   .showcase-home {
-    .showcase-text{
-      
+    .showcase-text {
       .steps {
-        .flex-items{
+        .flex-items {
           .icon {
             max-width: 250px;
             max-height: 250px;
@@ -243,63 +238,86 @@
       }
       .contact {
         .card {
-          form{
+          form {
             width: 350px;
             padding: 10px;
           }
         }
       }
-
     }
   }
-  
+  .footer {
+    min-height: 200px;
+    max-height: 200px;
+    .container {
+      padding: 0 5px;
+      max-height: 200px;
+      .footer-items {
+        display: flex;
+        flex-direction: column;
+        padding-top: 0;
+        min-height: 200px;
+        max-height: 200px;
+        .flex-row {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .footer-text {
+            padding-top: 1rem;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media (max-width: 380px) {
   .showcase-home {
-    .showcase-text{
+    .showcase-text {
       .contact {
         .card {
           padding: 10px;
           max-width: 310px;
-          form{
+          form {
             max-width: 290px;
             padding: 10px;
           }
         }
       }
-
     }
   }
   .showcase-blog {
     .grid {
-      .aside{
+      .aside {
         .recent-stories {
           ul {
             margin-left: 1.5rem;
           }
         }
       }
-    } 
-  } 
+    }
+  }
   .footer {
-    min-height: 140px;
-    max-height: 140px;
-    .container{
+    min-height: 200px;
+    max-height: 200px;
+    .container {
       padding: 0 5px;
-      max-height: 140px;
-      .footer-items{
+      max-height: 200px;
+      .footer-items {
         display: flex;
         flex-direction: column;
         padding-top: 0;
-        max-height: 140px;
+        min-height: 200px;
+        max-height: 200px;
         .flex-row {
           display: flex;
           flex-direction: column;
           justify-content: center;
+          .footer-text {
+            padding-top: 1rem;
+          }
         }
       }
     }
   }
 }
-
