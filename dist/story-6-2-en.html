@@ -21,13 +21,29 @@
       <div class="navbar">
         <div class="container flex">
           <a href="index-en.html" class="h1"><h1>Zizi Karma</h1></a>
-          <div class="toggle "></div>
+          <div class="toggle"></div>
           <nav>
             <ul>
-              <li><a href="index-en.html" class="menu-icon"><img src="../icons/home.svg" alt=""></a></li>
-              <li><a href="index-en.html#contact" class="menu-icon"><img src="../icons/envelope.svg" alt=""></a></li>
-              <li><a href="blog-en.html" class="menu-icon"><img src="../icons/copywriting.svg" alt=""></a></li>
-              <li><a href="story-6-2.html" class="menu-icon"><img src="../icons/russia.svg" alt=""></a></li>
+              <li>
+                <a href="index-en.html" class="menu-icon"
+                  ><img src="../icons/home.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="index-en.html#contact" class="menu-icon"
+                  ><img src="../icons/envelope.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="blog-en.html" class="menu-icon"
+                  ><img src="../icons/copywriting.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="story-6-2.html" class="menu-icon"
+                  ><img src="../icons/russia.svg" alt=""
+                /></a>
+              </li>
             </ul>
           </nav>
         </div>
@@ -40,7 +56,6 @@
         <li><a href="blog-en.html">Blog</a></li>
         <li><a href="index-en.html#contact" class="menu-text">Contact</a></li>
         <li><a href="index.html">Русский</a></li>
-
       </ul>
     </nav>
 
@@ -323,44 +338,56 @@
     </section>
 
     <!-- Footer -->
-   <footer class="footer">
-    <div class="container">
-      <div class="footer-items">
-        <div class="email flex-row">
-          <a href="mailto:elious08@gmail.com" class="mail" target="_blank">
-            <img src="../icons/email.svg" alt="">
-            <p>elious08@gmail.com</p>
-          </a>
-          <a href="https://www.instagram.com/yuliprokop/" class="insta" target="_blank">
-            <img src="../icons/instagram.svg" alt="">
-            <p>yuliprokop</p>
-          </a> 
-        </div>
-        <div class="footer-text flex-row">
-          <p>&copy; 2021 Zizi Karma</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-items">
+          <div class="email flex-row">
+            <a
+              href="https://signal.org/download/"
+              class="signal"
+              target="_blank"
+            >
+              <img src="../icons/signal.png" alt="" />
+              <p>+66-064-975-7593</p>
+            </a>
+            <a href="mailto:elious08@gmail.com" class="mail" target="_blank">
+              <img src="../icons/email.svg" alt="" />
+              <p>elious08@gmail.com</p>
+            </a>
+            <a
+              href="https://www.instagram.com/yuliprokop/"
+              class="insta"
+              target="_blank"
+            >
+              <img src="../icons/instagram.svg" alt="" />
+              <p>yuliprokop</p>
+            </a>
+          </div>
+          <div class="footer-text flex-row">
+            <p>&copy; 2021 Zizi Karma</p>
+          </div>
         </div>
       </div>
-    </div>
-  </footer>
-  <script>
-    const menuToggle = document.querySelector('.toggle')
-    const showcase = document.querySelector('.showcase-blog')
-    const header = document.querySelector('.header')
-    const menuText = document.querySelector('.menu-text')
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".toggle");
+      const showcase = document.querySelector(".showcase-blog");
+      const header = document.querySelector(".header");
+      const menuText = document.querySelector(".menu-text");
 
-    menuToggle.addEventListener('click', () => {
-      menuToggle.classList.toggle('active')
-      showcase.classList.toggle('active')
-      header.classList.toggle('active')
-      menuText.classList.toggle('active')
-    })
+      menuToggle.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+        header.classList.toggle("active");
+        menuText.classList.toggle("active");
+      });
 
-    menuText.addEventListener('click', () => {
-      menuToggle.classList.toggle('active')
-      showcase.classList.toggle('active')
-      header.classList.toggle('active')
-      menuText.classList.toggle('active')
-    })
-  </script>
+      menuText.addEventListener("click", () => {
+        menuToggle.classList.toggle("active");
+        showcase.classList.toggle("active");
+        header.classList.toggle("active");
+        menuText.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>
