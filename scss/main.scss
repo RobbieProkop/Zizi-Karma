@@ -443,6 +443,7 @@ img {
   .flex-row {
     display: flex;
     flex-direction: row;
+<<<<<<< HEAD
     gap: 5px;
     img {
       max-width: 45px;
@@ -451,10 +452,21 @@ img {
     }
     .tele {
       img {
+=======
+    img {
+      max-width: 40px;
+      color: $light-color;
+      padding: 0 5px;
+    }
+    .signal {
+      img {
+        max-width: 45px;
+>>>>>>> 007fc81fe07bf34d4c8ad87d63fa3ccbf0169e59
         max-height: 40px;
         padding-top: 5px;
       }
     }
+<<<<<<< HEAD
     .insta {
       img {
         max-width: 40px;
@@ -463,6 +475,11 @@ img {
     .mail,
     .insta,
     .tele {
+=======
+    .mail,
+    .insta,
+    .signal {
+>>>>>>> 007fc81fe07bf34d4c8ad87d63fa3ccbf0169e59
       display: flex;
       color: $light-color;
       padding-left: 10px;
